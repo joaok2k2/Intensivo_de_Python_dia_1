@@ -3,8 +3,7 @@ import pandas as pd
 def enviar_email(nome_da_loja, tabela):
     import smtplib
     import email.message
-
-    server = smtplib.SMTP('smtp.gmail.com:587')
+    
     corpo_email = f'''
     <p>Prezados, </p>
 
