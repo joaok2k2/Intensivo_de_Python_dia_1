@@ -1,15 +1,16 @@
 import pandas as pd
+import smtplib
+import email.message
+
+
 
 def enviar_email(nome_da_loja, tabela):
-    import smtplib
-    import email.message
-    
     corpo_email = f'''
     <p>Prezados, </p>
 
     <p>Segue relatório de vendas</p>
      {tabela.to_html()}
-     <p>Qualquer d´vuida estou à disposição.<p/>
+     <p>Qualquer dúvida estou à disposição.<p/>
 
      '''
 
